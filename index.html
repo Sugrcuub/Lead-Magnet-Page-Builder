@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Lead Magnet Page Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page Generator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Lead Magnet Page Generator</h1>
+  <main class="container">
+    <h1>🎯 Free Landing Page Generator</h1>
+    <p>Create a simple landing page in seconds. No code needed!</p>
+
     <form id="builder-form">
-      <label>Headline: <input type="text" id="headline" required></label>
-      <label>Subheadline: <input type="text" id="subheadline" required></label>
-      <label>CTA Text: <input type="text" id="cta" required></label>
-      <label>Theme Color: <input type="color" id="color" value="#4CAF50"></label>
-      <button type="submit">Generate Page</button>
+      <div class="input-group">
+        <label for="headline">Headline</label>
+        <input type="text" id="headline" placeholder="e.g. Download my free guide!" required />
+      </div>
+      <div class="input-group">
+        <label for="subheadline">Subheadline</label>
+        <input type="text" id="subheadline" placeholder="e.g. Learn how to grow your audience..." required />
+      </div>
+      <div class="input-group">
+        <label for="cta">CTA Button Text</label>
+        <input type="text" id="cta" placeholder="e.g. Get the Free Guide" required />
+      </div>
+      <div class="input-group">
+        <label for="color">Theme Color</label>
+        <input type="color" id="color" value="#4CAF50" />
+      </div>
+
+      <button type="submit" class="btn">✨ Generate & Preview</button>
     </form>
-    <div id="preview">
-      <h2>Preview</h2>
+
+    <section id="preview">
+      <h2>🔍 Live Preview</h2>
       <iframe id="preview-frame"></iframe>
-    </div>
-    <button id="download-btn" style="display:none">Download Page</button>
-  </div>
+    </section>
+
+    <button id="download-btn" class="btn btn-download" style="display: none;">📥 Download Landing Page</button>
+    <p id="success-msg" class="success-msg"></p>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
+
 
