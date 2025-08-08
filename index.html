@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lead Magnet Page Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lead Magnet Page Generator</h1>
+    <form id="builder-form">
+      <label>Headline: <input type="text" id="headline" required></label>
+      <label>Subheadline: <input type="text" id="subheadline" required></label>
+      <label>CTA Text: <input type="text" id="cta" required></label>
+      <label>Theme Color: <input type="color" id="color" value="#4CAF50"></label>
+      <button type="submit">Generate Page</button>
+    </form>
+    <div id="preview">
+      <h2>Preview</h2>
+      <iframe id="preview-frame"></iframe>
+    </div>
+    <button id="download-btn" style="display:none">Download Page</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
 
